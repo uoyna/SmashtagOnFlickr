@@ -14,7 +14,75 @@
 		979C2B771FF29F6900086344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979C2B751FF29F6900086344 /* LaunchScreen.storyboard */; };
 		979C2B7F1FF3E0BA00086344 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C2B7E1FF3E0BA00086344 /* TweetTableViewCell.swift */; };
 		979C2B811FF3E0C800086344 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C2B801FF3E0C800086344 /* TweetTableViewController.swift */; };
+		979C2B9B1FF3E38E00086344 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979C2B9A1FF3E38E00086344 /* Twitter.framework */; };
+		979C2B9C1FF3E38E00086344 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 979C2B9A1FF3E38E00086344 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		979C2B8C1FF3E36300086344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F435027A1A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
+		979C2B8E1FF3E36300086344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C48B28021AFA598D00C7DEF6;
+			remoteInfo = OAuthSwiftOSX;
+		};
+		979C2B901FF3E36300086344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4B6EE1E1BF74CE300443596;
+			remoteInfo = OAuthSwiftTVOS;
+		};
+		979C2B921FF3E36300086344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C40890C01C11B37000E3146A;
+			remoteInfo = OAuthSwiftWatchOS;
+		};
+		979C2B941FF3E36300086344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F451E3C5195B8CD80051434C;
+			remoteInfo = OAuthSwiftDemo;
+		};
+		979C2B961FF3E36300086344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C49FD5241AFB5DF500791E1A;
+			remoteInfo = OAuthSwiftOSXDemo;
+		};
+		979C2B981FF3E36300086344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4D50DF71BFB693F0053B624;
+			remoteInfo = OAuthSwiftTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		979C2B9D1FF3E38E00086344 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				979C2B9C1FF3E38E00086344 /* Twitter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		979C2B691FF29F6900086344 /* SmashtagOnFlickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmashtagOnFlickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +94,8 @@
 		979C2B781FF29F6900086344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		979C2B7E1FF3E0BA00086344 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		979C2B801FF3E0C800086344 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
+		979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = "../../../../../Downloads/OAuthSwift-swift3/OAuthSwift.xcodeproj"; sourceTree = "<group>"; };
+		979C2B9A1FF3E38E00086344 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979C2B9B1FF3E38E00086344 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +113,8 @@
 		979C2B601FF29F6900086344 = {
 			isa = PBXGroup;
 			children = (
+				979C2B9A1FF3E38E00086344 /* Twitter.framework */,
+				979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */,
 				979C2B6B1FF29F6900086344 /* SmashtagOnFlickr */,
 				979C2B6A1FF29F6900086344 /* Products */,
 			);
@@ -70,6 +143,20 @@
 			path = SmashtagOnFlickr;
 			sourceTree = "<group>";
 		};
+		979C2B831FF3E36200086344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				979C2B8D1FF3E36300086344 /* OAuthSwift.framework */,
+				979C2B8F1FF3E36300086344 /* OAuthSwift.framework */,
+				979C2B911FF3E36300086344 /* OAuthSwift.framework */,
+				979C2B931FF3E36300086344 /* OAuthSwift.framework */,
+				979C2B951FF3E36300086344 /* OAuthSwiftDemo.app */,
+				979C2B971FF3E36300086344 /* OAuthSwiftOSXDemo.app */,
+				979C2B991FF3E36300086344 /* OAuthSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,6 +167,7 @@
 				979C2B651FF29F6900086344 /* Sources */,
 				979C2B661FF29F6900086344 /* Frameworks */,
 				979C2B671FF29F6900086344 /* Resources */,
+				979C2B9D1FF3E38E00086344 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,12 +206,70 @@
 			mainGroup = 979C2B601FF29F6900086344;
 			productRefGroup = 979C2B6A1FF29F6900086344 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 979C2B831FF3E36200086344 /* Products */;
+					ProjectRef = 979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				979C2B681FF29F6900086344 /* SmashtagOnFlickr */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		979C2B8D1FF3E36300086344 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 979C2B8C1FF3E36300086344 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		979C2B8F1FF3E36300086344 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 979C2B8E1FF3E36300086344 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		979C2B911FF3E36300086344 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 979C2B901FF3E36300086344 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		979C2B931FF3E36300086344 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 979C2B921FF3E36300086344 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		979C2B951FF3E36300086344 /* OAuthSwiftDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftDemo.app;
+			remoteRef = 979C2B941FF3E36300086344 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		979C2B971FF3E36300086344 /* OAuthSwiftOSXDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftOSXDemo.app;
+			remoteRef = 979C2B961FF3E36300086344 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		979C2B991FF3E36300086344 /* OAuthSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuthSwiftTests.xctest;
+			remoteRef = 979C2B981FF3E36300086344 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		979C2B671FF29F6900086344 /* Resources */ = {
@@ -310,6 +456,7 @@
 				979C2B7D1FF29F6900086344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

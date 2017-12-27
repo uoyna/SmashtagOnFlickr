@@ -62,8 +62,9 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
         self.tableView.estimatedRowHeight = self.tableView.rowHeight
         self.tableView.rowHeight = UITableViewAutomaticDimension     
         
+        let consumerKey = "85d23a8b9da1862a56238eddd354dbe6"
         let oauthswift = OAuth1Swift(
-            consumerKey:    "85d23a8b9da1862a56238eddd354dbe6", //serviceParameters["consumerKey"]!,
+            consumerKey: consumerKey, //serviceParameters["consumerKey"]!,
             consumerSecret: "2b0d1c0a5c84c358", //serviceParameters["consumerSecret"]!,
             requestTokenUrl: "https://www.flickr.com/services/oauth/request_token",
             authorizeUrl:    "https://www.flickr.com/services/oauth/authorize",
@@ -72,11 +73,12 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
         self.oauthswift = oauthswift
         oauthswift.authorizeURLHandler = getURLHandler()
         let _ = oauthswift.authorize(
-            withCallbackURL: URL(string: "LearnFromPictures://oauth-callback/flickr")!,
+            withCallbackURL: URL(string: "SmashtagOnFlickr://oauth-callback/flickr")!,
             success: { credential, response, parameters in
                 //self.showTokenAlert(name: serviceParameters["name"], credential: credential)
                 //self.testFlickr(oauthswift, consumerKey: serviceParameters["consumerKey"]!)
                 print("success")
+                self.testFlickr(oauthswift, consumerKey: consumerKey)
         },
             failure: { error in
                 print(error.description)
@@ -84,6 +86,27 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
         )
     }
 
+    func testFlickr (_ oauthswift: OAuth1Swift, consumerKey: String) {
+        let url :String = "https://api.flickr.com/services/rest/"
+        let parameters :Dictionary = [
+            "method"         : "flickr.photos.search",
+            "api_key"        : consumerKey,
+            //"user_id"        : "", //"128483205@N08",
+            "format"         : "json",
+            "nojsoncallback" : "1",
+            "extras"         : "url_q,url_z"
+        ]
+        let _ = oauthswift.client.get(
+            url, parameters: parameters,
+            success: { response in
+                let jsonDict = try? response.jsonObject()
+                print(jsonDict as Any)
+        },
+            failure: { error in
+                print(error)
+        }
+        )
+    }
     
     func getURLHandler() -> OAuthSwiftURLHandlerType {
         #if os(iOS)
