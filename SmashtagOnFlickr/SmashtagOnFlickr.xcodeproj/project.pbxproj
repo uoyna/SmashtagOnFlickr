@@ -12,6 +12,8 @@
 		979C2B721FF29F6900086344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979C2B701FF29F6900086344 /* Main.storyboard */; };
 		979C2B741FF29F6900086344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979C2B731FF29F6900086344 /* Assets.xcassets */; };
 		979C2B771FF29F6900086344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979C2B751FF29F6900086344 /* LaunchScreen.storyboard */; };
+		979C2B7F1FF3E0BA00086344 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C2B7E1FF3E0BA00086344 /* TweetTableViewCell.swift */; };
+		979C2B811FF3E0C800086344 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C2B801FF3E0C800086344 /* TweetTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		979C2B731FF29F6900086344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		979C2B761FF29F6900086344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		979C2B781FF29F6900086344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979C2B7E1FF3E0BA00086344 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		979C2B801FF3E0C800086344 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		979C2B6B1FF29F6900086344 /* SmashtagOnFlickr */ = {
 			isa = PBXGroup;
 			children = (
+				979C2B801FF3E0C800086344 /* TweetTableViewController.swift */,
+				979C2B7E1FF3E0BA00086344 /* TweetTableViewCell.swift */,
 				979C2B6C1FF29F6900086344 /* AppDelegate.swift */,
 				979C2B6E1FF29F6900086344 /* ViewController.swift */,
 				979C2B701FF29F6900086344 /* Main.storyboard */,
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				979C2B6F1FF29F6900086344 /* ViewController.swift in Sources */,
+				979C2B811FF3E0C800086344 /* TweetTableViewController.swift in Sources */,
 				979C2B6D1FF29F6900086344 /* AppDelegate.swift in Sources */,
+				979C2B7F1FF3E0BA00086344 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
