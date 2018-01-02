@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eOj-Pg-Pxm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MWn-U0-0zr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -101,25 +101,82 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ4-In-9Dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872.79999999999995" y="139.880059970015"/>
+            <point key="canvasLocation" x="4295.1999999999998" y="158.77061469265368"/>
+        </scene>
+        <!--Flickr Table View Controller-->
+        <scene sceneID="7yD-7Q-XED">
+            <objects>
+                <tableViewController id="8jy-a3-18I" customClass="FlickrTableViewController" customModule="SmashtagOnFlickr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="166" sectionHeaderHeight="28" sectionFooterHeight="28" id="3s0-hM-wt2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Flickr Search" textAlignment="natural" minimumFontSize="17" id="tk0-3V-kBh">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                        </textField>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Flickr" rowHeight="166" id="80g-ZJ-IzH">
+                                <rect key="frame" x="0.0" y="58" width="375" height="166"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="80g-ZJ-IzH" id="vI9-cf-2R3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8jy-a3-18I" id="VUG-of-Oc0"/>
+                            <outlet property="delegate" destination="8jy-a3-18I" id="xi2-GC-yL5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bQ0-e8-2is"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="tk0-3V-kBh" id="qz6-HT-gLm"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIR-cy-PG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660" y="139.880059970015"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="kVP-fZ-869">
+        <scene sceneID="7Se-SV-BPB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eOj-Pg-Pxm" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MWn-U0-0zr" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Il0-P0-JXl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QDO-0T-4WP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="tEc-9e-fPZ" kind="relationship" relationship="rootViewController" id="B4E-kX-bqM"/>
+                        <segue destination="8jy-a3-18I" kind="relationship" relationship="rootViewController" id="v0d-rd-19O"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JUr-NK-Zht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28q-UI-LtF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66.400000000000006" y="139.880059970015"/>
+            <point key="canvasLocation" x="1720.8" y="139.880059970015"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="voh-oV-UVD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fe4-A2-4Aa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ga0-sj-XtY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tEc-9e-fPZ" kind="relationship" relationship="rootViewController" id="axu-Uq-XD0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4K5-px-YMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3356" y="158.77061469265368"/>
         </scene>
     </scenes>
 </document>
