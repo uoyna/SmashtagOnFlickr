@@ -11,14 +11,9 @@
 		97592CDC1FFBBC6D006A3E6A /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97592CDB1FFBBC6D006A3E6A /* Flickr.swift */; };
 		97592CDE1FFBD2EA006A3E6A /* FlickrRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97592CDD1FFBD2EA006A3E6A /* FlickrRequest.swift */; };
 		979C2B6D1FF29F6900086344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C2B6C1FF29F6900086344 /* AppDelegate.swift */; };
-		979C2B6F1FF29F6900086344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C2B6E1FF29F6900086344 /* ViewController.swift */; };
 		979C2B721FF29F6900086344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979C2B701FF29F6900086344 /* Main.storyboard */; };
 		979C2B741FF29F6900086344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979C2B731FF29F6900086344 /* Assets.xcassets */; };
 		979C2B771FF29F6900086344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979C2B751FF29F6900086344 /* LaunchScreen.storyboard */; };
-		979C2B7F1FF3E0BA00086344 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C2B7E1FF3E0BA00086344 /* TweetTableViewCell.swift */; };
-		979C2B811FF3E0C800086344 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979C2B801FF3E0C800086344 /* TweetTableViewController.swift */; };
-		979C2B9B1FF3E38E00086344 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979C2B9A1FF3E38E00086344 /* Twitter.framework */; };
-		979C2B9C1FF3E38E00086344 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 979C2B9A1FF3E38E00086344 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		979CD1731FFE7C2200C0553C /* FlickrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CD1721FFE7C2200C0553C /* FlickrTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +76,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				979C2B9C1FF3E38E00086344 /* Twitter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,15 +88,11 @@
 		97592CDD1FFBD2EA006A3E6A /* FlickrRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrRequest.swift; sourceTree = "<group>"; };
 		979C2B691FF29F6900086344 /* SmashtagOnFlickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmashtagOnFlickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		979C2B6C1FF29F6900086344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		979C2B6E1FF29F6900086344 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		979C2B711FF29F6900086344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		979C2B731FF29F6900086344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		979C2B761FF29F6900086344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		979C2B781FF29F6900086344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		979C2B7E1FF3E0BA00086344 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
-		979C2B801FF3E0C800086344 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
 		979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = "../../../../../Downloads/OAuthSwift-swift3/OAuthSwift.xcodeproj"; sourceTree = "<group>"; };
-		979C2B9A1FF3E38E00086344 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		979CD1721FFE7C2200C0553C /* FlickrTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				979C2B9B1FF3E38E00086344 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +110,6 @@
 		979C2B601FF29F6900086344 = {
 			isa = PBXGroup;
 			children = (
-				979C2B9A1FF3E38E00086344 /* Twitter.framework */,
 				979C2B821FF3E36200086344 /* OAuthSwift.xcodeproj */,
 				979C2B6B1FF29F6900086344 /* SmashtagOnFlickr */,
 				979C2B6A1FF29F6900086344 /* Products */,
@@ -143,10 +131,7 @@
 				97592CDD1FFBD2EA006A3E6A /* FlickrRequest.swift */,
 				97592CDB1FFBBC6D006A3E6A /* Flickr.swift */,
 				97592CD21FFBBB44006A3E6A /* FlickrTableViewController.swift */,
-				979C2B801FF3E0C800086344 /* TweetTableViewController.swift */,
-				979C2B7E1FF3E0BA00086344 /* TweetTableViewCell.swift */,
 				979C2B6C1FF29F6900086344 /* AppDelegate.swift */,
-				979C2B6E1FF29F6900086344 /* ViewController.swift */,
 				979C2B701FF29F6900086344 /* Main.storyboard */,
 				979C2B731FF29F6900086344 /* Assets.xcassets */,
 				979C2B751FF29F6900086344 /* LaunchScreen.storyboard */,
@@ -301,14 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				979C2B6F1FF29F6900086344 /* ViewController.swift in Sources */,
 				97592CDE1FFBD2EA006A3E6A /* FlickrRequest.swift in Sources */,
 				979CD1731FFE7C2200C0553C /* FlickrTableViewCell.swift in Sources */,
-				979C2B811FF3E0C800086344 /* TweetTableViewController.swift in Sources */,
 				97592CD31FFBBB44006A3E6A /* FlickrTableViewController.swift in Sources */,
 				979C2B6D1FF29F6900086344 /* AppDelegate.swift in Sources */,
 				97592CDC1FFBBC6D006A3E6A /* Flickr.swift in Sources */,
-				979C2B7F1FF3E0BA00086344 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

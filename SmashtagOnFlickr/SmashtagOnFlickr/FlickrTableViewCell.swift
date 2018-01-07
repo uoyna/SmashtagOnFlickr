@@ -38,10 +38,6 @@ class FlickrTableViewCell: UITableViewCell {
                 }
             }
             task.resume()
-            
-            //if let imageData = try? Data(contentsOf: imageUrl){
-            //    self.flickrPhoto?.image = UIImage(data: imageData)
-            //}
         }
         else {
             self.flickrPhoto?.image = nil
